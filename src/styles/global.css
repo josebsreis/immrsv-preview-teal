@@ -89,7 +89,8 @@ p, li, dd, blockquote { text-wrap: pretty; }
   width: var(--square);
   height: var(--square);
   border-radius: 50%;
-  background: currentColor;
+  /* the brand's teal: every square on the page is the signature */
+  background: var(--accent);
   flex: none;
 }
 

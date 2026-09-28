@@ -170,6 +170,11 @@
      than with the spacing scale because it is a drawn mark, not a measure. */
   --square: 5px;
   --hairline: 1px;
+  /* The brand's one colour, Pantone 7716 C: a teal, kept to the small marks
+     — the dots — so it reads as a signature on a monochrome page rather than
+     a theme. (The client's card gives its hex as #FE0002, which is a red; its
+     RGB 0,128,131 and the Pantone agree on this.) */
+  --accent: #008083;
   --glass-blur: 18px;
 
   /* ── motion ────────────────────────────────────────────────────── */

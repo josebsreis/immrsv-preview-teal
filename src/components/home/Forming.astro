@@ -181,7 +181,9 @@ const {
   .team i { position: absolute; left: calc(var(--sq) / -2); top: calc(var(--sq) / -2);
             width: var(--sq); height: var(--sq); border-radius: 50%; background: #2c2c30;
             opacity: var(--o, 0); transform: translate(var(--x, 0px), var(--y, 0px)) scale(var(--s, 1)); }
-  .team i.us { background: #f5f5f7; }
+  /* ours is the brand's teal — the one colour on the page — and turns to
+     the light as the five become one, so the light opens out of it */
+  .team i.us { background: var(--us, var(--accent)); }
   .note { position: absolute; left: 0; right: 0; top: calc(var(--page-y) + var(--s-6) + 3rem); margin: 0;
           text-align: center; line-height: 1.7; color: rgb(255 255 255 / 0.45);
           opacity: var(--nv, 0); }

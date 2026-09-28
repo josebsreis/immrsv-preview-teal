@@ -237,6 +237,9 @@ export function createForming(root: HTMLElement): Forming {
         const sqz = knock(im) * 0.9;
         el.style.setProperty('--o', d > 0 ? '1' : '0');
         el.style.setProperty('--s', '1');
+        // teal until the five draw together, then the light's own colour
+        const TEAL = [0, 128, 131];
+        el.style.setProperty('--us', `rgb(${TEAL.map((c, n) => Math.round(c + (LIGHT[n] - c) * mg)).join(' ')})`);
         el.style.setProperty('--y', `${(dotY + sqz * sq * 0.12).toFixed(1)}px`);
         el.style.transform = `translate(var(--x, 0px), var(--y, 0px)) scale(${(1 + sqz * 0.22).toFixed(3)}, ${(1 - sqz * 0.22).toFixed(3)})`;
         return;
