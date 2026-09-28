@@ -163,7 +163,7 @@ p, li, dd, blockquote { text-wrap: pretty; }
 @media (hover: hover) and (pointer: fine) { .reel-arrows button:hover { color: var(--ink); } }
 .reel-count { color: var(--ink-3); font-variant-numeric: tabular-nums; }
 .reel-track { margin-top: var(--s-4); height: var(--hairline); background: var(--line); overflow: hidden; }
-.reel-track i { display: block; height: 100%; background: var(--ink);
+.reel-track i { display: block; height: 100%; background: var(--accent);
                 transform-origin: left center; transform: scaleX(0); }
 
 /* a page-edge anchored row: hero bottom, etc. */
